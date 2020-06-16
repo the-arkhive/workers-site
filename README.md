@@ -1,0 +1,2 @@
+## New Metalsmith + GH Actions + Cloudflare Site
+This website follows the tutorial found [HERE](https://css-tricks.com/how-to-make-a-simple-cms-with-cloudflare-github-actions-and-metalsmith/) with some edits and corrections made as I discovered them.
