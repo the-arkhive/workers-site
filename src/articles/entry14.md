@@ -1,5 +1,6 @@
 ---
 title: 'Paper Pulper'
+description: 'Summer, 2019 - Building and testing to make in house paper'
 layout: articles.hbs
 ---
 ## Paper Pulper

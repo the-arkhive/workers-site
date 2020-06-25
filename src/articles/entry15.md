@@ -1,5 +1,6 @@
 ---
 title: 'Laser Cutter'
+description: 'Summer, 2019 - Working with a laser cutter for use with printmaking'
 layout: articles.hbs
 ---
 ## Laser Cutter

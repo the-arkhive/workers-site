@@ -1,5 +1,6 @@
 ---
 title: 'Internet Friend'
+description: 'Spring, 2018 - Text generation from neural network'
 layout: articles.hbs
 ---
 ## Internet Friend

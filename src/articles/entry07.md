@@ -1,5 +1,6 @@
 ---
 title: 'Portrait of an Artist as a Young Engineer'
+description: 'Fall, 2017 - Senior Capstone project'
 layout: articles.hbs
 ---
 ## Portrait of an Artist as a Young Engineer

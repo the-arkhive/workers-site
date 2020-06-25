@@ -1,5 +1,6 @@
 ---
 title: 'Paradise Made Poster'
+description: 'Spring and Summer, 2019 - Turning comic cover into a poster'
 layout: articles.hbs
 ---
 ## Paradise Made Poster

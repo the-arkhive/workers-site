@@ -1,5 +1,6 @@
 ---
 title: 'Paradise Made'
+description: 'Spring, 2018 - Comic book cover art'
 layout: articles.hbs
 ---
 ## Paradise Made

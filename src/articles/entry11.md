@@ -1,5 +1,6 @@
 ---
 title: 'Character Commission'
+description: 'Summer, 2018 - Dungeons and Dragons character art'
 layout: articles.hbs
 ---
 ## Character Commission

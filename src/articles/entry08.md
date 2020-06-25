@@ -1,5 +1,6 @@
 ---
 title: 'now_in_billion_of_colors'
+description: 'Spring, 2018 - Incremental change over time with color'
 layout: articles.hbs
 ---
 ## [now_in_billion_of_colors](https://www.instagram.com/now_in_billions_of_colors/)
