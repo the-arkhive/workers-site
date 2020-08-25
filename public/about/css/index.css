@@ -18,3 +18,45 @@ body {
     padding: 0.5rem 1rem;
     text-decoration: none;
   }
+
+  :root {
+    --wrapperWidth: 100vw;
+    --gutter: 0px;
+    --noOfColumns: 3;
+
+    --rowHeight: calc((var(--wrapperWidth) - (2 * var(--gutter))) / 3);
+
+    --ratioA: 1;
+    --ratioB: 1;
+  }
+
+  #portfolio {
+    width: var(--wrapperWidth);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: var(--rowHeight);
+    grid-gap: var(--gutter);
+  }
+
+  .entry {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .entry img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .entry img.portrait {
+    width: 100%;
+    height: auto;
+  }

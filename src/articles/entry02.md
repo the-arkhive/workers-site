@@ -1,6 +1,7 @@
 ---
 title: 'Bread Head'
 description: 'Fall, 2016 - Podcast sticker design'
+preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/bread_head.jpg'
 layout: articles.hbs
 ---
 ## Bread Head

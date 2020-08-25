@@ -1,6 +1,7 @@
 ---
 title: 'Paradise Made'
 description: 'Spring, 2018 - Comic book cover art'
+preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/milton_comic_cover.png'
 layout: articles.hbs
 ---
 ## Paradise Made

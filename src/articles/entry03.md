@@ -1,6 +1,7 @@
 ---
 title: 'White on White Still Life'
 description: 'Winter, 2017 - Early drawing practice'
+preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/still_life.jpg'
 layout: articles.hbs
 ---
 ## White on White Still Life

@@ -5,11 +5,18 @@
   </head>
   <body>
     {{>navigation }}
-    <div>
-       {{#each articles }}
-        <a href="{{path}}"><h3>{{ title }}</h3></a>
-        <p>{{ description }}</p>
-       {{/each }}
+
+    <div id='container'>
+      <div id="header">
+        <p>FILLER TEXT</p>
+      </div>
+      <div id="portfolio">
+        {{#each articles }}
+          <div class="entry">
+            <img src="{{ preview }}" class="{{ orientation }}" alt=" {{ title }}">
+          </div>
+        {{/each }}
+      </div>
     </div>
   </body>
 </html>

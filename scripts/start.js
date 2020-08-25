@@ -4,8 +4,8 @@ const layouts = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
 const permalinks = require('metalsmith-permalinks');
 const handlebars = require('handlebars');
-const jstransformer = require('jstransformer-handlebars');
-const place = require('');
+//const jstransformer = require('jstransformer-handlebars');
+//const place = require('');
 const fs = require('fs');
 
 const path = require('path');
