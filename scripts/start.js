@@ -4,7 +4,6 @@ const layouts = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
 const permalinks = require('metalsmith-permalinks');
 const handlebars = require('handlebars');
-const jstransformer = require('jstransformer-handlebars');
 const fs = require('fs');
 
 const path = require('path');
@@ -23,7 +22,7 @@ Metalsmith(pwd)
   .destination('public')
   .use(collections({
     articles: {
-      pattern: 'articles/*.md',
+      pattern: ['articles/*.md', 'css/*.css']
     },
   }))
   .use(markdown())
@@ -46,7 +45,7 @@ Metalsmith(pwd)
   }))
   .use(watch({
     paths: {
-      "${source}/**/*": true,
+      "${source}/**/*": "**/*",
       "layouts/**/*": "**/*",
     }
   }))
