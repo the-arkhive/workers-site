@@ -24,7 +24,7 @@ Metalsmith(pwd)
   .destination('public')
   .use(collections({
     articles: {
-      pattern: 'articles/*.md',
+      pattern: ['articles/*.md', 'css/*.css'],
     },
   }))
   .use(markdown())
@@ -48,7 +48,7 @@ Metalsmith(pwd)
   }))
   .use(watch({
     paths: {
-      "${source}/**/*": true,
+      "${source}/**/*": "**/*",
       "layouts/**/*": "**/*",
     }
   }))
