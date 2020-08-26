@@ -38,6 +38,17 @@ body {
     grid-gap: var(--gutter);
   }
 
+  @media(max-width: 540px) {
+    #portfolio {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .entry img.portrait {
+      width: 100px;
+      height: auto;
+    }
+  }
+
   .entry {
     position: relative;
     width: 100%;

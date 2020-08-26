@@ -4,8 +4,7 @@ const layouts = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
 const permalinks = require('metalsmith-permalinks');
 const handlebars = require('handlebars');
-//const jstransformer = require('jstransformer-handlebars');
-//const place = require('');
+const jstransformer = require('jstransformer-handlebars');
 const fs = require('fs');
 
 const path = require('path');
@@ -14,7 +13,7 @@ const pwd = path.join(__dirname, "..");
 // Navigation
 handlebars.registerPartial('navigation', fs.readFileSync(pwd + '/layouts/partials/navigation.hbs').toString());
 
-// NOTE: Uncomment if you want a server for development
+// Dev server
  const serve = require('metalsmith-serve');
  const watch = require('metalsmith-watch');
 
@@ -41,7 +40,6 @@ Metalsmith(pwd)
     }
   }))
 
-// NOTE: Uncomment if you want a server for development
 .use(serve({
     port: 8081,
     verbose: true

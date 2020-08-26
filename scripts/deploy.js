@@ -12,7 +12,6 @@ const pwd = path.join(__dirname, "..");
 // Navigation
 handlebars.registerPartial('navigation', fs.readFileSync(pwd + '/layouts/partials/navigation.hbs').toString());
 
-// NOTE: Uncomment if you want a server for development
  const serve = require('metalsmith-serve');
  const watch = require('metalsmith-watch');
 
