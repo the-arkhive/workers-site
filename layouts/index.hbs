@@ -4,23 +4,29 @@
     <link rel="stylesheet" type="text/css" href="/css/index.css">
   </head>
   <body>
-    {{>navigation }}
-
     <div id='container'>
-      <div id="header">
-        <p>FILLER TEXT</p>
-      </div>
-      <div id="portfolio">
-        {{#each articles }}
-          <div class="entry">
-            <img src="{{ preview }}" class="{{ orientation }}" alt=" {{ title }}">
-            <div class="overlay">
-              <div class="previewTitle"> {{ title }}</div>
-              <div class="previewDesc"> {{ description }}</div>
+        <div id="header">
+          <div class="nameContainer">
+            <div class="name">
+              <p>Thomas Williams</p>
+            </div>
+            <div class="coverImage">
+              <img src="/img/thumbnail/cover-image.PNG">
             </div>
           </div>
-        {{/each }}
-      </div>
+          {{>navigation }}
+        </div>
+        <div id="portfolio">
+          {{#each articles }}
+            <div class="entry">
+              <img class="{{ orientation }}" src="{{ preview }}"  alt=" {{ title }}">
+              <div class="overlay">
+                <div class="previewTitle"> {{ title }}</div>
+                <div class="previewDesc"> {{ description }}</div>
+              </div>
+            </div>
+          {{/each }}
+        </div>
     </div>
   </body>
 </html>
