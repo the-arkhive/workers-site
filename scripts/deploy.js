@@ -9,8 +9,11 @@ const fs = require('fs');
 const path = require('path');
 const pwd = path.join(__dirname, "..");
 
+//------Partials Definitions------
 // Navigation
 handlebars.registerPartial('navigation', fs.readFileSync(pwd + '/layouts/partials/navigation.hbs').toString());
+// Cover
+handlebars.registerPartial('cover', fs.readFileSync(pwd + '/layouts/partials/cover.hbs').toString());
 
  const serve = require('metalsmith-serve');
  const watch = require('metalsmith-watch');
@@ -35,5 +38,6 @@ Metalsmith(pwd)
     pattern: ["*/*/*html", "*/*html", "*html"],
     partials: {
       navigation: 'partials/navigation',
+      cover: `partials/navigation`,
     }
   }))

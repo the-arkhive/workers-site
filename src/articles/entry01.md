@@ -1,5 +1,6 @@
 ---
 title: 'Day Blind Stars'
+url: '/articles/day-blind-stars/index.html'
 description: 'Summer, 2016 - Early stippling work'
 preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/day_blind_stars_2.jpg'
 orientation: 'portrait'

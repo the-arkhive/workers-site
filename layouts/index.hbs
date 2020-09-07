@@ -6,25 +6,20 @@
   <body>
     <div id='container'>
         <div id="header">
-          <div class="nameContainer">
-            <div class="name">
-              <p>Thomas Williams</p>
-            </div>
-            <div class="coverImage">
-              <img src="/img/thumbnail/cover-image.PNG">
-            </div>
-          </div>
+          {{>cover }}
           {{>navigation }}
         </div>
         <div id="portfolio">
           {{#each articles }}
-            <div class="entry">
-              <img class="{{ orientation }}" src="{{ preview }}"  alt=" {{ title }}">
-              <div class="overlay">
-                <div class="previewTitle"> {{ title }}</div>
-                <div class="previewDesc"> {{ description }}</div>
+            <a href="{{ url }}">
+              <div class="entry">
+                  <img class="{{ orientation }}" src="{{ preview }}"  alt=" {{ title }}">
+                <div class="overlay">
+                  <div class="previewTitle"> {{ title }}</div>
+                  <div class="previewDesc"> {{ description }}</div>
+                </div>
               </div>
-            </div>
+            </a>
           {{/each }}
         </div>
     </div>

@@ -21,7 +21,7 @@ body {
     overflow: hidden;
   }
 
-  #header .nameContainer{
+  #header .cover {
     position: relative;
     text-align:center;
     height: auto;
@@ -37,14 +37,24 @@ body {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     margin: auto;
+    z-index: 0;
   }
 
-  #header .name p {
+  #header .name h1 {
     font-size: 48px;
     font-weight: 600;
     letter-spacing: 4px;
     font-variant: small-caps;
     color: white;
+    margin: 0px;
+  }
+
+  #header .name p {
+    font-size: 18px;
+    font-weight: 1;
+    font-variant: small-caps;
+    color: white;
+    margin: 0px;
   }
 
   #header .coverImage {
@@ -53,10 +63,11 @@ body {
     left: 50%;
     height: auto;
     margin: auto;
+    z-index: -1;
   }
 
   #header .coverImage img {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 
   .navigation {
