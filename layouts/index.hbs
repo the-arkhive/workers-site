@@ -11,7 +11,7 @@
         </div>
         <div id="portfolio">
           {{#each articles }}
-            <a href="{{ url }}">
+            <a href="/{{ this.path }}">
               <div class="entry">
                   <img class="{{ orientation }}" src="{{ preview }}"  alt=" {{ title }}">
                 <div class="overlay">

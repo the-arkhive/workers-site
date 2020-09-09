@@ -40,7 +40,7 @@ Metalsmith(pwd)
     pattern: ["*/*/*html", "*/*html", "*html"],
     partials: {
       navigation: 'partials/navigation',
-      cover: `partials/navigation`,
+      cover: 'partials/navigation',
     }
   }))
 
