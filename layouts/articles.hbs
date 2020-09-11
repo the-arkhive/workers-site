@@ -4,9 +4,14 @@
     <link rel="stylesheet" type="text/css" href="/css/articles.css">
   </head>
   <body>
-    {{>navigation }}
-    <div>
-      {{{contents}}}
+    <div id='container'>
+      <div id="header">
+        {{>cover }}
+        {{>navigation }}
+      </div>
+      <div id='articleBody'>
+        {{{contents}}}
+      </div>
     </div>
   </body>
 </html>

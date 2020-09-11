@@ -3,6 +3,7 @@ title: 'Paper Pulper'
 description: 'Summer, 2019 - Building and testing to make in house paper'
 preview: ''
 layout: articles.hbs
+index: 14
 ---
 ## Paper Pulper
 ### Summer, 2019

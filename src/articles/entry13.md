@@ -3,6 +3,7 @@ title: 'Vacuum Table'
 description: 'Summer, 2019 - Building a vacuum table for screen printing'
 preview: ''
 layout: articles.hbs
+index: 13
 ---
 ## Vacuum Table
 ### Summer, 2019

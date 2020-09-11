@@ -4,6 +4,7 @@ description: 'Summer, 2019 - Working with a laser cutter for use with printmakin
 preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/laser-cutter/mirror-assembly.jpeg'
 orientation: 'portrait'
 layout: articles.hbs
+index: 15
 ---
 ## Laser Cutter
 ### Summer, 2019

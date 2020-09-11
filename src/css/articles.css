@@ -1,20 +1,124 @@
 body {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-    }
-  .navigation {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 1rem;
-  }
-  .button {
-    margin: 1rem;
-    border: solid 1px #ccc;
-    border-radius: 4px;        
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-  }
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(31, 33, 37);
+  text-align: center;
+  color: #d7dbdf;
+  margin:0;
+  padding:0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 1rem;
+}
+.button {
+  margin: 1rem;
+  border: solid 1px #ccc;
+  border-radius: 4px;        
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+#container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#header .cover {
+  position: relative;
+  text-align:center;
+  height: auto;
+  margin: 5 5 5 5;
+}
+
+#header .name {
+  position: absolute;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 0;
+}
+
+#header .name h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-variant: small-caps;
+  color: white;
+  margin: 0px;
+}
+
+#header .name p {
+  font-size: 18px;
+  font-weight: 1;
+  font-variant: small-caps;
+  color: white;
+  margin: 0px;
+}
+
+#header .coverImage {
+  float: center;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  margin: auto;
+  z-index: -1;
+}
+
+#header .coverImage img {
+  opacity: 0.4;
+}
+
+#articleBody {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+#articleBody img {
+  width: 60%;
+  margin: 16px;
+}
+
+#articleBody h2 {
+  font-size: 28px;
+  font-weight: 3;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0px;
+}
+
+#articleBody h3 {
+  font-size: 22px;
+  font-weight: 1;
+  font-variant: small-caps;
+  color: white;
+  margin: 0px;
+}
+
+#articleBody h4 {
+  font-size: 20px;
+  font-weight: 1;
+  font-variant: small-caps;
+  color: white;
+  margin: 8px;
+}
+
+#articleBody p {
+  font-size: 18px;
+  font-weight: 0;
+  color: white;
+  margin: 8px;
+}
