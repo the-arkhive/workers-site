@@ -1,10 +1,9 @@
 name = "workers-site"
 type = "webpack"
-account_id = ""
-workers_dev = true
-route = ""
-zone_id = ""
+account_id = "f56d736e3ddcb1fd42c1df8904bb0174"
+route = "*thomaslodgewilliams.com/*"
+zone_id = "d0974c87171f0d7aefbfafef0bc6829a"
 
 [site]
-bucket = ""
+bucket = "public"
 entry-point = "workers-site"
