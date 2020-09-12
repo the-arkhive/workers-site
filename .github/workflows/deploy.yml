@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - uses: actions@checkoutmaster
+      - uses: actions/checkoutmaster
       - name: Build site
         run: "lodge deploy"
       - name: Publish
