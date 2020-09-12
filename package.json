@@ -1,13 +1,14 @@
 {
   "name": "workers-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A site built with metalsmith and handlebars, deployed to Cloudlfare workers sites",
+  "bin": {
+    "lodge": "./scripts/cli.js"
+  },
   "scripts": {
     "deploy": "node scripts/deploy.js",
     "start": "node scripts/start.js",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write '**/*.js'"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "metalsmith-permalinks": "^2.2.0",
     "metalsmith-serve": "0.0.7",
     "metalsmith-watch": "^1.0.3",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "yargs": "^16.0.3"
   }
 }

@@ -21,16 +21,15 @@ handlebars.registerPartial(
   fs.readFileSync(pwd + "/layouts/partials/cover.hbs").toString()
 );
 
-const serve = require("metalsmith-serve");
-const watch = require("metalsmith-watch");
-
 Metalsmith(pwd)
   .source("src")
   .destination("public")
   .use(
     collections({
       articles: {
-        pattern: "articles/*.md",
+        pattern: ["articles/*.md"],
+        sortBy: "index",
+        reverse: true,
       },
     })
   )
@@ -48,7 +47,15 @@ Metalsmith(pwd)
       pattern: ["*/*/*html", "*/*html", "*html"],
       partials: {
         navigation: "partials/navigation",
-        cover: `partials/navigation`,
+        cover: "partials/navigation",
       },
     })
-  );
+  )
+
+  .build(function (err) {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log("build completed!");
+    }
+  });
