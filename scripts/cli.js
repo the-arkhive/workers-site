@@ -89,7 +89,7 @@ require("yargs")
     },
   })
   .command({
-    command: "deploy",
+    command: "build",
 
     handler: () => {
       const Metalsmith = require("metalsmith");
