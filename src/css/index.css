@@ -223,7 +223,7 @@ and (max-device-width : 480px) {
   }
 
   #header .name h1 {
-    font-size: 56px;
+    font-size: 64px;
     font-weight: 600;
     letter-spacing: 4px;
     font-variant: small-caps;

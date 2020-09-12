@@ -121,12 +121,52 @@ body {
   font-size: 18px;
   font-weight: 0;
   color: white;
-  margin: 8px;
+  margin: 12px 8px 24px 8px;
 }
 
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+  #header .cover {
+    position: relative;
+    text-align:center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -0%);
+        -ms-transform: translate(-50%, -0%);
+            transform: translate(-50%, -0%);
+    height: auto;
+    width: 90%;
+  }
+
+  #header .name {
+    position: absolute;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  #header .name h1 {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-variant: small-caps;
+    color: white;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  #header .name p {
+    font-size: 24px;
+    font-weight: 1;
+    font-variant: small-caps;
+    color: white;
+    width: 100%;
+    margin: 0px;
+  }
+
   #articleBody {
     margin: auto;
     width: 90%;
@@ -139,7 +179,7 @@ and (max-device-width : 480px) {
   }
 
   #articleBody h2 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 3;
     font-variant: small-caps;
     letter-spacing: 2px;
@@ -148,7 +188,7 @@ and (max-device-width : 480px) {
   }
   
   #articleBody h3 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 1;
     font-variant: small-caps;
     color: white;
@@ -156,7 +196,7 @@ and (max-device-width : 480px) {
   }
   
   #articleBody h4 {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 1;
     font-variant: small-caps;
     color: white;
@@ -164,10 +204,10 @@ and (max-device-width : 480px) {
   }
   
   #articleBody p {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 0;
     color: white;
-    margin: 8px;
+    margin: 12px 8px 24px 8px;
   }
 }
 
