@@ -13,6 +13,7 @@ body {
 
 #container {
   min-height: 100%;
+  justify-content: center;
   height: auto !important;
   height: 100%;
   margin: 0 auto -20px;
@@ -21,6 +22,7 @@ body {
 
 #header .cover {
   position: relative;
+  justify-content: center;
   text-align:center;
   height: auto;
   margin: 5 5 5 5;
@@ -114,34 +116,6 @@ body {
   grid-gap: var(--gutter);
 }
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-  #portfolio {
-    position: relative;
-    width: var(--MobilewrapperWidth);
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: var(--MobilerowHeight);
-    grid-gap: var(--Mobilegutter);
-  }
-
-  .entry img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: auto;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-
-    opacity: 1;
-    display: block;
-    transition: .2s ease;
-    backface-visibility: hidden;
-  }
-}
 
 .entry {
   position: relative;
@@ -166,9 +140,9 @@ and (max-device-width : 480px) {
   height: 100%;
   width: auto;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
   opacity: 1;
   display: block;
   transition: .2s ease;
@@ -190,18 +164,27 @@ and (max-device-width : 480px) {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  width:100%;
 }
 
 .previewTitle {
   color: white;
+  font-variant: small-caps;
+  text-align: center;
   font-size: 24px;
+  width:80%;
+  margin: 0 auto;
   padding: 2px 2px;
 }
 
 .previewDesc {
   color: white;
+  text-align: center;
   font-size: 16px;
+  width:80%;
+  margin: 0 auto;
   padding: 2px 2px;
+
 }
 
 /* unvisited link */
@@ -212,4 +195,87 @@ a:link {
 /* visited link */
 a:visited {
   color: #d37537;
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  #header .cover {
+    position: relative;
+    text-align:center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -0%);
+        -ms-transform: translate(-50%, -0%);
+            transform: translate(-50%, -0%);
+    height: auto;
+    width: 90%;
+  }
+
+  #header .name {
+    position: absolute;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  #header .name h1 {
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-variant: small-caps;
+    color: white;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  #header .name p {
+    font-size: 24px;
+    font-weight: 1;
+    font-variant: small-caps;
+    color: white;
+    width: 100%;
+    margin: 0px;
+  }
+
+  #portfolio {
+    position: relative;
+    width: var(--MobilewrapperWidth);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: var(--MobilerowHeight);
+    grid-gap: var(--Mobilegutter);
+  }
+
+  .entry img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    opacity: 1;
+    display: block;
+    transition: .2s ease;
+    backface-visibility: hidden;
+  }
+
+  .previewTitle {
+    color: white;
+    font-variant: small-caps;
+    font-size: 64px;
+    padding: 2px 2px;
+  }
+  
+  .previewDesc {
+    color: white;
+    font-size: 48px;
+    padding: 2px 2px;
+  }
 }
