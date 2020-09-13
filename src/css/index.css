@@ -22,21 +22,18 @@ body {
 
 #header .cover {
   position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align:center;
-  height: auto;
-  margin: 5 5 5 5;
+  height: 256px;
+  margin: 0px 0px 16px 0px;
 }
 
 #header .name {
-  position: absolute;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  float: center;
   margin: auto;
+  padding: 100px 0 0 0;
   z-index: 0;
 }
 
@@ -58,16 +55,25 @@ body {
 }
 
 #header .coverImage {
-  float: center;
-  top: 50%;
+  position: absolute;
+  top: 54%;
   left: 50%;
-  height: auto;
-  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0px;
   z-index: -1;
 }
 
 #header .coverImage img {
   opacity: 0.4;
+}
+
+#header a {
+  text-decoration: none;
+  display:inline-block;
+  width:100%;
+  height:100%;
 }
 
 .navigation {
@@ -140,8 +146,8 @@ body {
   height: 100%;
   width: auto;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   
   opacity: 1;
   display: block;
@@ -203,42 +209,58 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
   #header .cover {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align:center;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -0%);
-        -ms-transform: translate(-50%, -0%);
-            transform: translate(-50%, -0%);
-    height: auto;
-    width: 90%;
+    height: 256px;
+    margin: 0px 0px 16px 0px;
   }
-
+  
   #header .name {
-    position: absolute;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
+    float: center;
+    margin: auto;
+    padding: 56px 0 0 0;
     z-index: 0;
   }
-
+  
   #header .name h1 {
     font-size: 64px;
     font-weight: 600;
     letter-spacing: 4px;
     font-variant: small-caps;
     color: white;
-    width: 100%;
     margin: 0px;
   }
   
   #header .name p {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 1;
     font-variant: small-caps;
     color: white;
-    width: 100%;
     margin: 0px;
+  }
+  
+  #header .coverImage {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 0px;
+    z-index: -1;
+  }
+  
+  #header .coverImage img {
+    opacity: 0.4;
+  }
+  
+  #header a {
+    text-decoration: none;
+    display:inline-block;
+    width:100%;
+    height:100%;
   }
 
   #portfolio {

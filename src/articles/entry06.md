@@ -1,7 +1,7 @@
 ---
 title: 'Self Portrait w/ Mirror'
 description: 'Winter, 2017 - Early drawing practice'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/self_portrait.jpg'
+preview: '/img/thumbnail/self-portrait.png'
 orientation: 'portrait'
 layout: articles.hbs
 index: 6

@@ -1,7 +1,7 @@
 ---
 title: 'Character Commission'
 description: 'Summer, 2018 - Dungeons and Dragons character art'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/commissions/char-1.png'
+preview: '/img/thumbnail/char-1.png'
 orientation: 'portrait'
 layout: articles.hbs
 index: 11

@@ -1,7 +1,7 @@
 ---
 title: 'Internet Friend'
 description: 'Spring, 2018 - Text generation from neural network'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/internet_friend.jpg'
+preview: '/img/thumbnail/internet-friend.png'
 orientation: 'portrait'
 layout: articles.hbs
 index: 9

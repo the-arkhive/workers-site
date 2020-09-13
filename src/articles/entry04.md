@@ -1,7 +1,7 @@
 ---
 title: 'Field Notes'
 description: 'Winter, 2017 - Early drawing practice'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/final_project.jpg'
+preview: '/img/thumbnail/final-project.png'
 layout: articles.hbs
 index: 4
 ---

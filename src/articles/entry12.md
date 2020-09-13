@@ -1,7 +1,7 @@
 ---
 title: 'Paradise Made Poster'
 description: 'Spring and Summer, 2019 - Turning comic cover into a poster'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/white-test.png'
+preview: '/img/thumbnail/white-test.png'
 layout: articles.hbs
 index: 12
 ---
