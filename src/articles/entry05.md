@@ -1,7 +1,7 @@
 ---
 title: 'Portrait from Memory'
 description: 'Winter, 2017 - Early drawing practice'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/portrait_from_memory.jpg'
+preview: '/img/thumbnail/portrait-from-memory.png'
 orientation: 'portrait'
 layout: articles.hbs
 index: 5

@@ -1,7 +1,7 @@
 ---
 title: 'now in billion of colors'
 description: 'Spring, 2018 - Incremental change over time with color'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/billions_of_colors.png'
+preview: '/img/thumbnail/billions-of-colors.png'
 layout: articles.hbs
 index: 8
 ---

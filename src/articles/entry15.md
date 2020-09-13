@@ -1,7 +1,7 @@
 ---
 title: 'Laser Cutter'
 description: 'Summer, 2019 - Working with a laser cutter for use with printmaking'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/laser-cutter/mirror-assembly.jpeg'
+preview: '/img/thumbnail/mirror-assembly.png'
 orientation: 'portrait'
 layout: articles.hbs
 index: 15

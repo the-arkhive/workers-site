@@ -1,7 +1,7 @@
 ---
 title: 'Portrait of an Artist as a Young Engineer'
 description: 'Fall, 2017 - Senior Capstone project'
-preview: 'https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/capstone_final.jpg'
+preview: '/img/thumbnail/capstone-final.png'
 layout: articles.hbs
 index: 7
 ---

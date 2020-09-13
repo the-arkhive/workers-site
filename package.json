@@ -11,8 +11,8 @@
     "format": "prettier --write '**/*.js'"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas Williams",
+  "license": "MIT",
   "devDependencies": {
     "handlebars": "^4.7.6",
     "handlebars-helpers": "^0.10.0",
