@@ -33,7 +33,7 @@ body {
 #header .name {
   float: center;
   margin: auto;
-  padding: 100px 0 0 0;
+  padding: 0 0 0 0;
   z-index: 0;
 }
 
@@ -299,5 +299,28 @@ and (max-device-width : 480px) {
     color: white;
     font-size: 48px;
     padding: 2px 2px;
+  }
+
+  .bioLong {
+    display: none;
+  }
+
+  .bioLong .show-bio{
+    display: inline;
+  }
+
+  button{
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    cursor:pointer;
+    border:none;
+    padding:8px;
+    font-size:20px;
+    background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color:white;
+    font-family:cursive;
+    box-sizing:border-box;
   }
 }
