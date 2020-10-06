@@ -2,12 +2,19 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <script src="/js/index.js"></script>
   </head>
   <body>
     <div id='container'>
         <div id="header">
           {{>cover }}
         </div>
+
+        <div class="bio">
+            <button class="showBio">Show Bio</button><br>
+            <span class="bioLong">Leave hair everywhere cat dog hate mouse eat string barf pillow no baths hate everything but being gorgeous with belly side up or catasstrophe sit in box yet meow in empty rooms. Pee on walls it smells like breakfast relentlessly pursues moth pelt around the house and up and down stairs chasing phantoms run up and down stairs but touch water with paw then recoil in horror yet woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now, touch water with paw then recoil in horror. Missing until dinner time have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat but check cat door for ambush 10 times before coming in enslave the hooman and as lick i the shoes human clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken!</span>
+        </div>
+
         <div id="portfolio">
           {{#each articles}}
             <a href="/{{ this.path }}">
