@@ -85,9 +85,8 @@ require("yargs")
           } else {
             console.log("build completed!");
           }
-        });
-    },
-  })
+        })
+
   .command({
     command: "build",
 

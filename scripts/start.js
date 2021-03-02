@@ -20,6 +20,11 @@ handlebars.registerPartial(
   "cover",
   fs.readFileSync(pwd + "/layouts/partials/cover.hbs").toString()
 );
+// Bio
+handlebars.registerPartial(
+  "bio",
+  fs.readFileSync(pwd + "/layouts/partials/bio.hbs").toString()
+);
 
 // Dev server
 const serve = require("metalsmith-serve");
@@ -52,6 +57,7 @@ Metalsmith(pwd)
       partials: {
         navigation: "partials/navigation",
         cover: "partials/navigation",
+        bio: "partials/bio",
       },
     })
   )

@@ -2,10 +2,12 @@ const showBio = document.querySelector(".showBio");
 const text = document.querySelector(".bioLong");
 
 showBio.addEventListener("click", (e) => {
-  text.classList.toggle("bioLong show-bio");
-  if (showBio.innerText === "Show Bio") {
-    showBio.innerText = "Hide Bio";
-  } else {
+  let bioLongOnOrOff = text.classList.toggle("bioLong");
+  console.log(bioLongOnOrOff);
+  text.classList.toggle("show-bio");
+  if (showBio.innerText === "Hide Bio") {
     showBio.innerText = "Show Bio";
+  } else {
+    showBio.innerText = "Hide Bio";
   }
 });
