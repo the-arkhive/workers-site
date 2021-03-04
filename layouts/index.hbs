@@ -2,12 +2,18 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
   </head>
   <body>
     <div id='container'>
         <div id="header">
           {{>cover }}
         </div>
+
+        <div class="bio">
+            {{>bio }}
+        </div>
+        <br>
         <div id="portfolio">
           {{#each articles}}
             <a href="/{{ this.path }}">
@@ -23,4 +29,5 @@
         </div>
     </div>
   </body>
-</html>
+  <footer><script src="/js/index.js"></script></footer>
+</htm
