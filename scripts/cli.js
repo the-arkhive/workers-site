@@ -30,6 +30,11 @@ require("yargs")
         "cover",
         fs.readFileSync(pwd + "/layouts/partials/cover.hbs").toString()
       );
+      // Bio
+      handlebars.registerPartial(
+        "bio",
+        fs.readFileSync(pwd + "/layouts/partials/bio.hbs").toString()
+      );
 
       // Dev server
       const serve = require("metalsmith-serve");
@@ -62,6 +67,7 @@ require("yargs")
             partials: {
               navigation: "partials/navigation",
               cover: "partials/navigation",
+              bio: "partials/bio",
             },
           })
         )
@@ -86,6 +92,8 @@ require("yargs")
             console.log("build completed!");
           }
         })
+      }
+    })
 
   .command({
     command: "build",
