@@ -121,6 +121,11 @@ require("yargs")
         "cover",
         fs.readFileSync(pwd + "/layouts/partials/cover.hbs").toString()
       );
+      // Bio
+      handlebars.registerPartial(
+        "bio",
+        fs.readFileSync(pwd + "/layouts/partials/bio.hbs").toString()
+      );
 
       Metalsmith(pwd)
         .source("src")
@@ -148,7 +153,8 @@ require("yargs")
             pattern: ["*/*/*html", "*/*html", "*html"],
             partials: {
               navigation: "partials/navigation",
-              cover: "partials/navigation",
+              cover: "partials/cover",
+              bio: "partials/bio"
             },
           })
         )
