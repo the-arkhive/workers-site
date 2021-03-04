@@ -77,7 +77,7 @@ Metalsmith(pwd)
   )
   .build(function (err) {
     if (err) {
-      console.error(err);
+      throw err
     } else {
       console.log("build completed!");
     }
